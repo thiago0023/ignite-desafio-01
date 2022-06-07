@@ -4,7 +4,7 @@ import MainLayout from './layouts/MainLayout'
 function App() {
 
   return (
-      <div className='font-inter text-gray-300 h-screen w-screen bg-gray-600 antialiased pb-4 leading-[140%]'>
+      <div className='font-inter text-gray-300 h-screen w-screen flex flex-col justify-center bg-gray-600 antialiased'>
         <Header />
         <MainLayout />
       </div>

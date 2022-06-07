@@ -9,8 +9,17 @@
     }
 
     body {
-        line-height: 140%
-    }
+        height: 100vh;
+        line-height: 140%;
+      }
+      
+      /* Avoid Chrome to see Safari hack */
+      @supports (-webkit-touch-callout: none) {
+        body {
+          /* The hack for Safari */
+          height: -webkit-fill-available;
+        }
+      }
 
     @media (max-width: 768px) {
         html {
